@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="color: #2e8039;background-color:powderblue;text-align: center"> Admin Homepage</h1>
+    <style>
+        li {
+            list-style-type: none; /* Убираем маркеры */
+        }
+        div {
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<p><font color="#556b2f" size ="4">Add New Restaurant</font></p>
+<form method="POST" action="add_rest">
+    <p>Specify Restaurant Name <input type="text" value={{.Restaurant}} /></p>
+    <p>Specify Restaurant's Foodtype <input type="text" value={{.Foodtype}} /></p>
+    <p>Specify expected delivery time <input type="text" value={{.time_to_wait}} /> </p>
+    <p><input type="submit" value="Add a restaurant" /></p>
+</form>
+
+<p> </p>
+<p><font color="#556b2f" size ="4">Add New Dish</font></p>
+<form method="POST" action="add_dish">
+    <p>Specify Restaurant Name <input type="text" value={{.TableName}} /></p>
+    <p>Specify Menu <input type="text" value={{.Menu}} /></p>
+    <p>Specify Position <input type="text" value={{.Position}} /></p>
+    <p>Specify Price <input type="text" value={{.Price}} /></p>
+    <p><input type="submit" value="Add a dish" /></p>
+</form>
+
+<div>
+<li><center> <input type="button" value = "Go back" onclick="history.back()" > </center></li>
+<li><center> <button type=”button” class=”btn btn-class-name”>Log out</button> </center></li>
+</div>
+</body>
+</html>

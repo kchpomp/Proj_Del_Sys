@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 style="color: #2e6c80;"><center> My Burger Menu:</center></h1>
+    <h2 style="color:#3b2d50;"><center> Foodtypes: Burgers</center></h2>
+    <h3 style="color:#7C5005;"><center> Cuisine: Western, Streetfood</center></h3>
+</head>
+<body>
+    <div style="text-align:center">
+        <ol style="list-style: none; font-size: 20px; line-height: 40px; font-weight: bold;">
+            <form action="/choose_menu" method="GET">
+                <li> <center>
+                    <button type="submit" name = "menu" value = "Appetizers" border="3">Appetizers</button>
+                </center></li>
+                <li> <center>
+                    <button type="submit" name="menu" value = "Menu" border="3">Menu</button>
+                </center></li>
+                <li> <center>
+                    <button type="submit" name="menu" value = "Bar" border="3">Bar</button>
+                </center></li>
+            </form>
+            <li><center> <input type="button" value = "Go back" onclick="history.back()" > </center></li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="color: #2e8039;background-color:powderblue;text-align: center"> Courier Homepage</h1>
+    <style>
+        li {
+            list-style-type: none; /* Убираем маркеры */
+        }
+        div {
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+
+<p><font color="#556b2f" size ="4">Courier Info</font></p>
+<form method="POST" action="courier_info">
+    <p>Courier ID <input type="text" value={{.courier_id}} /></p>
+    <p>First Name <input type="text" value={{.first_name}} /></p>
+    <p>Last Name <input type="text" value={{.last_name}} /> </p>
+    <p>Phone Number <input type="text" value={{.phone_number}} /> </p>
+    <p>E-Mail <input type="text" value={{.e_mail}} /> </p>
+</form>
+
+<div>
+<p><font color="#556b2f" size ="4">Order Info</font></p>
+<form method="POST" action="order_info">
+    <p>Restaurant Name <input type="text" value={{.Restaurant}} /></p>
+    <p>Time Left <input type="text" value={{.time}} /></p>
+    <p>Username <input type="text" value={{.username}} /></p>
+    <p>Delivery Adress <input type="text" value={{.delivery_adress}} /></p>
+</form>
+</div>
+<div>
+<p><font color="#556b2f" size ="4">Order Content and Price</font></p>
+<form method="POST" action="order_info1">
+    <p>Order Containment <input type="text" value={{.order_list}} /></p>
+    <p>Order Price <input type="text" value={{.price}} /> </p>
+</form>
+</div>
+<div>
+<li><center> <input type="button" value = "Go back" onclick="history.back()" > </center></li>
+<li><center> <button type=”button” class=”btn btn-class-name”>Log out</button> </center></li>
+</div>
+</body>
+</html>

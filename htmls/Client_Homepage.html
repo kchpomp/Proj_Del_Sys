@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1 style="color: #2e8039;background-color:powderblue;text-align: center"> Client Homepage</h1>
+    <style>
+        li {
+            list-style-type: none; /* Убираем маркеры */
+        }
+        div {
+            line-height: 2;
+        }
+        hr {
+            border: none; /* Убираем границу */
+            background-color: darkcyan; /* Цвет линии */
+            color: darkcyan; /* Цвет линии для IE6-7 */
+            height: 2px; /* Толщина линии */
+        }
+    </style>
+</head>
+<body>
+
+<center><p><font color="#00008b" size ="4" face="fantasy">Below is presented information about you</font></p></center>
+<hr>
+<form method="POST" action="client_homepage">
+    <p><font face="fantasy">Client Name: <input type="text" style="background-color: burlywood" value={{.Username}} /> </font></p>
+    <p><font face="fantasy">E-mail adress: <input type="text" style="background-color: burlywood" value={{.E_mail}} /></font></p>
+    <p><font face="fantasy">Home adress: <input type="text" style="background-color: burlywood" value={{.Adress}} /></font></p>
+</form>
+
+<div>
+    <li><center>
+        <a href = "/show_order_for_client" class = "nav-link-active" aria-current="page">
+            <input type="button" value = "Check information about an order" border="3">
+        </a>
+    </center></li>
+
+    <li><center>
+            <a href = "/choose_restaurant" class = "nav-link-active" aria-current="page">
+                <input type="button" value = "Let's make an order" border="3">
+            </a>
+    </center></li>
+
+    <li><center>
+        <input type="button" value = "Go back" onclick="history.back()" >
+    </center></li>
+
+    <li><center>
+        <a href = "/logout" class = "nav-link-active" aria-current="page">
+            <button type=”button” class=”btn btn-class-name”>Log out</button>
+        </a>
+    </center></li>
+</div>
+</body>
+</html>

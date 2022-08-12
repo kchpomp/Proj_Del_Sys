@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <h1 style="color: #2e8039;background-color:powderblue;text-align: center"> Check your order info </h1>
+    <style>
+        li {
+            list-style-type: none; /* Убираем маркеры */
+        }
+    </style>
+</head>
+<body>
+    <center><p><font color="#00008b" size ="4" face="fantasy">Below is presented information about your order</font></p></center>
+    <hr>
+
+<!--    <form method="GET" action="show_order_for_client">-->
+<!--        {{ range . }}-->
+<!--        <p><font face="fantasy">Your Order: <input type="text" style="background-color: burlywood" value="order list" />{{ .order_list }}</font></p>-->
+<!--        {{ end }}-->
+<!--        <p><font face="fantasy">Final Price: <input type="text" style="background-color: burlywood" value={{ .price }} />{{ .price }}</font></p>-->
+        <ul>
+            <p><font face="fantasy">Your Order:</font></p>
+            <p>
+                {{ .Order_list}}
+            </p>
+            <p><font face="fantasy">Final Price:</font></p>
+            <p>
+                {{ .Price}}
+            </p>
+
+        </ul>
+
+<!--    </form>-->
+
+    <li><center>
+        <input type="button" value = "Go back" onclick="history.back()" >
+    </center></li>
+</body>
+</html>

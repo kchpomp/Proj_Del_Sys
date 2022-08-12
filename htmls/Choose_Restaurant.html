@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1 style="color: #2e6c80;"><center> Choose a restaurant:</center></h1>
+    <hr>
+    <h3 style="color: #8B0000;"> <center>Available foodtypes: Sushi, Burgers, Shawarma, Pizza, Pasta</center></h3>
+    <hr>
+    <h3 style="color: #7C5005;"> <center>Available cuisine: Japanese, Western, Streetfood, Italian, Eastern</center></h3>
+    <hr>
+    <style>
+        li {
+            list-style-type: none; /* Убираем маркеры */
+        }
+        hr {
+            border: none; /* Убираем границу */
+            background-color: darkcyan; /* Цвет линии */
+            color: darkcyan; /* Цвет линии для IE6-7 */
+            height: 2px; /* Толщина линии */
+        }
+        ol {
+            list-style: none;
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: bold;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ol>
+            <form action="/rest_page" method="GET">
+                <li> <center>
+                    <a href = "/rest_page" class = "nav-link-active" aria-current="page">
+                        <button type="submit" value = "Ekiwoki" name = "restaurant" border="3">Ekiwoki</button>
+                    </a>
+                </center> </li>
+
+                <li> <center>
+                    <a href = "/rest_page" class = "nav-link-active" aria-current="page">
+                        <button type="submit" value = "My Burger" name = "restaurant" border="3">My Burger</button>
+                    </a>
+                </center> </li>
+
+                <li><center>
+                    <a href = "/rest_page" class = "nav-link-active" aria-current="page">
+                        <button type="submit" value = "Papa Milano" name = "restaurant" border="3">Papa Milano</button>
+                    </a>
+                </center></li>
+
+                <li><center>
+                    <a href = "/rest_page" class = "nav-link-active" aria-current="page">
+                        <button type="submit" value = "ShavaWorld" name = "restaurant" border="3">ShavaWorld</button>
+                    </a>
+                </center></li>
+            </form>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol>
+            <li><center>
+                <input type="button" value = "Go back" onclick="history.back()" >
+            </center></li>
+
+            <a href = "/logout" class = "nav-link-active" aria-current="page">
+                <button type=”button” class=”btn btn-class-name”>Log out</button>
+            </a>
+        </ol>
+    </div>
+
+</body>
+</html>
